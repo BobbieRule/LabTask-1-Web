@@ -62,14 +62,6 @@ header li a {
   font-family: Creative;
 }
 
-header li a:hover {
-  background-color: gray;
-  color: white;
-  padding: 0.5em;
-  transition: 0.2s;
-  border-radius: 0.3em;
-}
-
 #signIn {
   border-radius: 0.3em;
   text-align: center;
@@ -81,11 +73,21 @@ header li a:hover {
   padding: 0.2em;
 }
 
-#signIn:hover {
-  background-color: gray;
-  color: white;
-  padding: 0.6em;
-  transition: 0.2s;
+@media screen and (min-width: 800px) {
+  header li a:hover {
+    background-color: gray;
+    color: white;
+    padding: 0.5em;
+    transition: 0.2s;
+    border-radius: 0.3em;
+  }
+
+  #signIn:hover {
+    background-color: gray;
+    color: white;
+    padding: 0.6em;
+    transition: 0.2s;
+  }
 }
 
 #logo {
@@ -135,4 +137,146 @@ footer {
   font-family: Creative;
   font-size: 2.5em;
   text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+  header {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  nav li {
+    padding-bottom: 0.1em;
+  }
+
+  nav li a {
+    padding: 0%;
+    font-size: 1.5em;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  #logo {
+    padding: 0rem;
+    width: 5em;
+  }
+
+  #signIn {
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+  }
+
+  .image-area img {
+    width: 15em;
+  }
+
+  .content-area h1,
+  p {
+    padding: 0em;
+    margin: 0em;
+    text-align: center;
+  }
+
+  .content-area h1 {
+    font-size: 2em;
+  }
+
+  .content-area p {
+    font-size: 1.5em;
+  }
+
+  footer {
+    font-size: 2em;
+  }
+
+  .note {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  header {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  nav li {
+    padding-bottom: 0.1em;
+  }
+
+  nav li a {
+    padding: 0%;
+    font-size: 1.2em;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  #logo {
+    padding: 0rem;
+    width: 5em;
+  }
+
+  #signIn {
+    height: 2em;
+    font-size: 1.2em;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+  }
+
+  .image-area img {
+    width: 10em;
+  }
+
+  .content-area h1,
+  p {
+    padding: 0em;
+    margin: 0em;
+    text-align: center;
+  }
+
+  .content-area h1 {
+    font-size: 1.7em;
+  }
+
+  .content-area p {
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+
+  .note {
+    font-size: 1.5em;
+  }
 }
